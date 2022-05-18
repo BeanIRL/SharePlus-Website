@@ -1,6 +1,0 @@
-## Website SHARE+
-
-# Integrantes
-
-
-
