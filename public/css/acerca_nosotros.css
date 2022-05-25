@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*ACERCA DE NOSOTROS*/
+
+.bloque_acerca_nosotros{
+    width: 100%;
+    height: auto;
+  }
+  
+  .subloque_quehacemos{
+    background-color: #E96DA3;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  .subloque_imagen_quehacemos{
+    aspect-ratio: 21/9;
+    height: auto;
+    position: relative;
+    width: 40%;
+  }
+  
+  .subloque_imagen_quienes{
+    aspect-ratio: 2/3;
+    height: auto;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+  }
+  
+  .imagen_quehacemos,.imagen_quienes_somos{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .imagen_quienes_somos{
+    border-radius: 40%;
+  }
+  
+  .subloque_texto_quehacemos {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 60%;
+  }
+  
+  .subloque_texto_quehacemos h1{  
+    -webkit-text-stroke: 2px #F19D00;
+    font-family: 'Abel';
+    color: #FFF9F9;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+    margin: 1%;
+  }
+  
+  .subloque_texto_quehacemos p{
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+  }
+  
+  .subloque_objetivos, .subloque_quienes_somos{
+    background-color: #8F2D56;
+    width: 100%;
+    height: auto;
+  }
+  
+  .subloque_objetivos h2{
+    -webkit-text-stroke: 2px #F25A92;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #FEFEFE;
+    padding: 1%;
+  }
+  
+  .subloque_tarjetas_objetivos{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .tarjeta_objetivo{
+    width: 100%;
+    height: auto;
+    min-height: 210px;
+    background-color: #FFBC42;
+    border-radius: 18px;
+    margin: 2%;
+    padding: 2%;
+  
+  }
+  
+  .tarjeta_objetivo h3{
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .tarjeta_objetivo p{
+    text-align: center;
+    font-size: 24px;
+    margin: 1%;
+  }
+  
+  .subloque_quienes_somos{
+    background-color: #8F2D56;
+    width: 100%;
+    height: auto;
+  }
+  
+  .titulo_bloque_quienes_somos{
+    -webkit-text-stroke: 2px #18625F;
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1%;
+  }
+  
+  .subloque_tarjetas_personas{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+  }
+  
+  .tarjeta_persona{
+    width: 100%;
+    height: auto;
+    min-height: 227px;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tarjeta_persona p{
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 5%;
+  }
+
+  
+  @media only screen and (max-width: 980px) {
+    /*ACERCA DE NOSOTROS*/
+  .subloque_quehacemos{
+    flex-direction: column;
+  }
+
+  .subloque_imagen_quehacemos{
+    width: 100%;
+    max-height: 500px;
+  }
+
+  .subloque_texto_quehacemos {
+    padding: 5%;
+    width: 100%
+  }
+  .subloque_texto_quehacemos p{
+    text-align: justify;
+  }
+
+  .subloque_objetivos h2{
+    padding: 5%;
+  }
+
+  .subloque_tarjetas_objetivos{
+    flex-direction: column;
+  }
+
+  .tarjeta_objetivo{
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  .subloque_tarjetas_personas{
+    flex-direction: column;
+    padding: 2%;
+  }
+ 
+
+  .subloque_imagen_quienes{
+    margin: auto;
+    max-height: 400px;
+  }
+
+  }
