@@ -3,12 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./../public/css/acerca_nosotros.css" rel="stylesheet" type="text/css"> 
+  <link href="css/acerca_nosotros.css" rel="stylesheet" type="text/css">
+    <%- include('partials/head'); %>
 <!-- lIBRERIA DE ICONOS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
+
 <body>
+
+<%- include('partials/navbar'); %>
+
   <!--INFO-->
   <div class="bloque_acerca_nosotros">
     <div class="subloque_quehacemos">
@@ -76,6 +82,6 @@
     </div>
 
   </div>
-
+    <%- include('partials/footer'); %>
   </body>
   </html>

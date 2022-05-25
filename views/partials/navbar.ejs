@@ -1,22 +1,23 @@
 <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #73D2DE;">
 
 	<!-- SHARE+ logo -->
-	<img src="images/branding/logo_claro.png" width="15%" style="margin-left: 3%; margin-right:-10%">
+
 
 	<!-- Main elements -->
-	<div class="container pt-2 pb-2">
+	<div class="container-fluid pt-2 pb-2  d-md-block d-lg-inline-flex">
+		<img src="../images/branding/logo_claro.png" width="15%" style="margin-left:3%">
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 	
 		<div class="collapse navbar-collapse" id="mainNavbar">
-			<ul class="navbar-nav me-auto">
-				<li class="nav-item"><a class="nav_items" href="/">ACERCA DE NOSOTROS</a></li>
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item"><a class="nav_items" href="/acerca">ACERCA DE NOSOTROS</a></li>
 				<li class="nav-item"><a class="nav_items" href="/impacto">IMPACTO</a></li>
 				<li class="nav-item"><a class="nav_items" href="/contenidos">CONTENIDOS</a></li>
 				<li class="nav-item"><a class="nav_items" href="/contacto">CONTÁCTANOS</a></li>
 			</ul>
-			<ul class="navbar-nav align-items-center">
+			<ul class="navbar-nav ">
 				<% if (locals.isLogged) { %>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,7 +32,7 @@
 					</li>
 				<% } else { %>
 						<li class="nav-item"><a class="nav-link" href="/user/login"><button class="primary_btn">Iniciar sesión</button></a></li>
-						<li class="nav-item"><a class="" href="/user/register"><button class="secondary_btn">Registrarse</button></a></li>
+						<li class="nav-item"><a class="nav-link" href="/user/register"><button class="secondary_btn">Registrarse</button></a></li>
 				<% } %>
 			</ul>
 		</div>

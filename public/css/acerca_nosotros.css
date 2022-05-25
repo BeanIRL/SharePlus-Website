@@ -4,11 +4,14 @@
     box-sizing: border-box;
   }
 
+
 /*ACERCA DE NOSOTROS*/
+
 
 .bloque_acerca_nosotros{
     width: 100%;
     height: auto;
+    margin-bottom: 7rem;
   }
   
   .subloque_quehacemos{
@@ -55,7 +58,7 @@
   
   .subloque_texto_quehacemos h1{  
     -webkit-text-stroke: 2px #F19D00;
-    font-family: 'Abel';
+    font-family: 'Plumpfull';
     color: #FFF9F9;
     font-style: normal;
     font-weight: 400;
@@ -66,7 +69,7 @@
   }
   
   .subloque_texto_quehacemos p{
-    font-family: 'Abel';
+    font-family: 'Tw Cen MT';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -82,7 +85,7 @@
   
   .subloque_objetivos h2{
     -webkit-text-stroke: 2px #F25A92;
-    font-family: 'Abel';
+    font-family: 'Plumpfull';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -109,7 +112,7 @@
   }
   
   .tarjeta_objetivo h3{
-    font-family: 'Abel';
+    font-family: 'Tw Cen MT';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -132,7 +135,7 @@
   
   .titulo_bloque_quienes_somos{
     -webkit-text-stroke: 2px #18625F;
-    font-family: 'Abel';
+    font-family: 'Plumpfull';
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -158,10 +161,10 @@
   }
   
   .tarjeta_persona p{
-    font-family: 'Abel';
+    font-family: 'Tw Cen MT';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 31px;
     text-align: center;
     color: #FFFFFF;

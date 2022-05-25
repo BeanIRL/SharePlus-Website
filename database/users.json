@@ -6,5 +6,13 @@
   "password": "$2a$10$MjUp2B2YQQmnJHB0ek66hO22XbO2yn/QiCIaEjBoL1mYlPPb3Eg2i",
   "country": "Argentina",
   "avatar": "1652911650235_img.jpg"
+ },
+ {
+  "id": 2,
+  "fullName": "Jon Houston",
+  "email": "houstonjon69420@gmail.com",
+  "password": "$2a$10$edc.tuvy0C.orjnCr15G1.2qVqJo3dINrUrQAHayt2mK8Dz6jjuqa",
+  "country": "Paraguay",
+  "avatar": "1653097895626_img.jpg"
  }
 ]
