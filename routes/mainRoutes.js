@@ -6,5 +6,9 @@ const mainController = require('../controllers/mainController');
 router.get('/', mainController.index);
 
 router.get('/acerca', mainController.acercaDeNosotros);
+router.get('/contenidos', mainController.contentShare);
+router.get('/impacto', mainController.impactoShare);
+
+
 
 module.exports = router;

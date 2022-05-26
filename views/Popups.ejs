@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif; background-color: red;}
+
+* {box-sizing: border-box;}
+
+/*LogIn and SigIn pop up styles*/
+/*Pop up container */
+.popup{
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 9;
+}
+/*Form container*/
+.form_container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 329px;
+}
+/*Title text popup*/
+.title_popup{
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+/*Text and input for field asked container*/
+.field_container{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+/*Text for field asked*/
+.form_text{
+  padding: 0 0 5px 0;
+}
+/*Input for field asked*/
+.form_input{
+  border: 1px solid #E96DA3;
+  border-radius: 5px;
+  padding: 8px;
+}
+/*submit form button*/
+.form_button{
+  border-radius: 24px;
+  border: 0;
+  background-color: #A9607B;
+  color: white;
+  padding: 19px 0 19px 0;
+  width: 66%;
+  font-size: 17px;
+  margin-top: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Overlay style for submit button*/
+.form_button:hover{
+  background-color: #C87D94;
+  color: black;
+}
+/*Policy check asked container*/
+.policy_container_checkbox{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 10px;
+  padding: 5px 0px 5px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Read policy text*/
+.policy_text_checkbox{
+  font-size: 8px;
+  width: 107px;
+}
+
+/*Privacy Policy pop up*/
+/*Privacy Policy container*/
+.policy_popup{
+  width: 280px;
+  border: 1px solid black;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 10;
+  text-align: center;
+}
+/*Privacy Policy text container*/
+.policy_square{
+  padding: 25px;
+}
+/*Close Privacy Policy button*/
+.close_policy_button{
+  position: fixed;
+  font-size: 25px;
+  top: 6px;
+  right: 20px;
+}
+/*Privacy Policy text scroll*/
+.text_policy_container{
+  overflow-y: scroll;
+  max-height: 300px;
+}
+
+</style>
+</head>
+<body>
+<div id = "website"><!--Sustancial to englobate the hole
+  site in a div and name it into a div to the close function work-->
+<h2>Popup Form</h2>
+<button class="open-button" onclick="openSignInForm()">SigIn Form</button>
+<button class="open-button" onclick="openLogInForm()">LogIn Form</button>
+</div>
+<!--Pop ups must be out of the website div-->
+<!--LogIn Pop Ups-->
+<div class = "popup" id="login">
+  <form class = "form_container" name = "LogIn">
+    <h1 class = "title_popup">Iniciar Sesión</h1>
+    <div class = "field_container">
+      <label class = "form_text">Correo</label>
+      <input type = "email" placeholder="Ingresa tu correo" class = "form_input" name="email" required>
+    </div>
+    <div class = "field_container">
+      <label class = "form_text">Contraseña</label>
+      <input type = "password" placeholder="Ingresa tu contraseña" class = "form_input" name="password" required>
+    </div>
+    <button type="submit" class = "form_button">Iniciar Sesión</button>
+  </form>
+</div>
+
+<!--SignIn Pop Ups-->
+<div class = "popup" id="signin">
+  <form class = "form_container" name = "SignIn">
+    <h1 class = "title_popup">Registrate</h1>
+    <div class = "field_container">
+      <label class = "form_text">Nombre</label>
+      <input type = "text" placeholder="Ingresa tu nombre" class = "form_input" name="name" required>
+    </div>
+    <div class = "field_container">
+      <label class = "form_text">Apellido(s)</label>
+      <input type = "text" placeholder="Ingresa tus apellido(s)" class = "form_input" name="lastname" required>
+    </div>
+    <div class = "field_container">
+      <label class = "form_text">Correo</label>
+      <input type = "email" placeholder="Ingresa tu correo" class = "form_input" name="email" required>
+    </div>
+    <div class = "field_container">
+      <label class = "form_text">Contraseña</label>
+      <input type = "password" placeholder="Ingresa tu contraseña" class = "form_input" name="password" required>
+    </div>
+    <div class = "field_container">
+      <label class = "form_text">Repite la Contraseña</label>
+      <input type = "password" placeholder="Ingresa de nuevo tu contraseña" class = "form_input" name="repeatpassword" required>
+    </div>
+    <div class = "policy_container_checkbox">
+      <input type = "checkbox" name="policy" required>
+      <label class = "policy_text_checkbox">He leido y acepto los <a style = "color: blue" onclick="openPolicy()">Términos y Condiciones</a></label>
+    </div>
+    <button type="submit" class = "form_button">Registrarse</button>
+  </form>
+</div>
+
+<!--Privacy Policy Pop Ups-->
+<div class = "policy_popup" id="policy">
+  <form class = "policy_square">
+    <a class = "close_policy_button" onclick = "closePolicy()">&times;</a>
+    <p class = "title_popup">Política de Privacidad</p>
+    <div class = "text_policy_container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </form>
+</div>
+
+<script>
+/*Variables to control the open and close of the popups*/
+var popup = "login";
+var policy = false;
+
+/*To open LogIn*/
+function openLogInForm() {
+  document.getElementById("login").style.display = "block";
+  document.getElementById("website").style.filter = "blur(5px)";
+  popup = "login";
+}
+/*To open SignIn*/
+function openSignInForm() {
+  document.getElementById("signin").style.display = "block";
+  document.getElementById("website").style.filter = "blur(5px)";
+  popup = "signin";
+}
+/*To open Privacy Policy*/
+function openPolicy() {
+  document.getElementById("policy").style.display = "block";
+  document.getElementById("website").style.filter = "blur(5px)";
+  policy = true;
+}
+/*To close Privacy Policy*/
+function closePolicy() {
+  document.getElementById("policy").style.display = "none";
+  policy = false;
+}
+/*To close Pop ups by touching out of it*/
+document.addEventListener('mouseup', function(e) {
+    var container = document.getElementById(popup);
+    if (!container.contains(e.target) && !policy) {
+        container.style.display = 'none';
+        document.getElementById("policy").style.display = "none";
+        document.getElementById("website").style.filter = "blur(0px)";
+    }
+});
+
+</script>
+
+</body>
+</html>

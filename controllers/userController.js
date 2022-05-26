@@ -60,22 +60,10 @@ const controller = {
 
 				return res.redirect('/user/profile');
 			} 
-			return res.render('userLoginForm', {
-				errors: {
-					email: {
-						msg: 'Las credenciales son inválidas'
-					}
-				}
-			});
+			return res.redirect('/acerca');
 		}
 
-		return res.render('userLoginForm', {
-			errors: {
-				email: {
-					msg: 'No se encuentra este email en nuestra base de datos'
-				}
-			}
-		});
+		return res.redirect('/acerca');
 	},
 	profile: (req, res) => {
 		return res.render('userProfile', {

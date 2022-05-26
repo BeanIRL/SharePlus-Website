@@ -3,8 +3,14 @@ const controller = {
 		return res.render('index');
 	},
 	acercaDeNosotros: (req, res) => {
-		return res.render('acerca_nosotros_share');
-	}
+		return res.render('Acerca_nosotros_share');
+	},
+	contentShare: (req, res) => {
+		return res.render('Content_share');
+	},
+	impactoShare: (req, res) => {
+		return res.render('Impacto_share');
+	},
 }
 
 module.exports = controller;

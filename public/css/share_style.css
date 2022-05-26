@@ -1,0 +1,106 @@
+
+/*PÁGIANAS DE IMPACTO Y CONTENIDO */
+
+/*IMPACTO*/
+.bloque_impacto{
+   background-color:#E96DA3;
+   color:black;
+   font-family: Tahoma;
+   text-align:center;
+   width:100%;
+   font-size:14pt;
+   height:auto;
+
+
+}
+
+.subloque_impacto{
+  height:auto;
+  width:42%;
+  padding:2%;
+  margin: 1.5%;
+  display:inline-block;
+  text-align:center;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.bloque_logros{
+  height:auto;
+  width:92%;
+  padding:2%;
+  margin: 1.5%;
+  display:inline-block;
+  text-align:center;
+  background-color: #FFBC42;
+  border-radius: 30px;
+
+}
+
+
+
+/*CONETNIDOS*/
+
+.bloque_contenidos{
+   background-color:#8F2D56;
+   color:white;
+   font-family: Tahoma;
+   text-align:center;
+   width:100%;
+   height:auto;
+
+
+}
+
+.texto_contenidos{
+   background-color:#8F2D56;
+   padding: 3%;
+   color:white;
+   font-size: 18pt;
+   text-align:justify;
+}
+
+.imagen_contenidos{
+  padding: 3%;
+  width:85%;
+  height:auto;
+  background-color:#8F2D56;
+  color:white;
+}
+
+
+@media only screen and (max-width: 980px) {
+  /* CONTENIDOS*/
+
+  .texto_contenidos{
+     background-color:#8F2D56;
+     color:white;
+     font-size: 12pt;
+     text-align:justify;
+  }
+
+  /*IMPACTO*/
+  .bloque_impacto{
+     font-size:12pt;
+
+  }
+
+  .subloque_impacto{
+    height:auto;
+    width:85%;
+    padding:3%;
+    margin: 2%;
+    border-radius: 30px;
+  }
+
+  .bloque_logros{
+    height:auto;
+    width:85%;
+    padding:2%;
+    margin: 5%;
+    border-radius: 30px;
+  }
+
+
+
+}

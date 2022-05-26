@@ -31,8 +31,12 @@
 						</ul>
 					</li>
 				<% } else { %>
-						<li class="nav-item"><a class="nav-link" href="/user/login"><button class="primary_btn">Iniciar sesión</button></a></li>
-						<li class="nav-item"><a class="nav-link" href="/user/register"><button class="secondary_btn">Registrarse</button></a></li>
+					
+						<li class="nav-item"><a class="nav-link" onclick="openLogInForm()"><button class="primary_btn">Iniciar sesión</button></a></li>
+						<li class="nav-item"><a class="nav-link" onclick="openSignInForm()"><button class="secondary_btn">Registrarse</button></a></li>
+						
+						<%- include('./../Login'); %>
+						
 				<% } %>
 			</ul>
 		</div>
