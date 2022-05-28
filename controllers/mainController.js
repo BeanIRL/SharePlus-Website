@@ -11,6 +11,9 @@ const controller = {
 	impactoShare: (req, res) => {
 		return res.render('Impacto_share');
 	},
+	contactoShare: (req, res) => {
+		return res.render('Contactanos');
+	},
 }
 
 module.exports = controller;

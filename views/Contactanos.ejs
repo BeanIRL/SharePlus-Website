@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/contacto.css" rel="stylesheet" type="text/css">
+    <%- include('partials/head'); %>
+  </head>
+
+  <body>
+    <%- include('partials/navbar'); %>
+<!--Social Network-->
+    <div style="background: #FFE6B8; text-align: center" class="split">
+      <h1 class="network">Sigue nuestras redes:</h1>
+      <div class="figures">
+<!--    Twitter Stuff-->
+        <div class="square-white">
+          <div class="circle-wine" style="left: 20%; top: 30%">
+            <img src="images/branding/twitter.png">
+          </div>
+        </div>
+<!--    Instagram Stuff-->
+        <div class="square-red">
+          <div class="circle-wine" style="left: 17%;">
+            <img src="images/branding/instagram.png">
+          </div>
+        </div>
+<!--    Facebook Stuff-->
+        <div class="square-yellow">
+          <div class="circle-wine" style="top: 17%;">
+            <img src="images/branding/facebook.png">
+          </div>
+        </div>
+<!--    Whatsapp Stuff-->
+        <div class="square-blue">
+          <div class="circle-wine">
+            <img src="images/branding/whatsapp.png">
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Contact Form-->
+<!--Font to be determined-->
+    <div style="background: #C87D94" class="split">
+      <form class="contact-form">
+        <p>Nombre: *</p>
+        <input type="text">
+        <p>Correo electrónico: *</p>
+        <input type="text">
+        <p>Teléfono: *</p>
+        <input type="text">
+        <p>Mensaje: *</p>
+        <textarea type="text"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <%- include('partials/footer'); %>
+  </body>
+</html>
+

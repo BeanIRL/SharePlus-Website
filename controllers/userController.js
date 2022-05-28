@@ -40,7 +40,7 @@ const controller = {
 
 		let userCreated = User.create(userToCreate);
 
-		return res.redirect('/user/login');
+		return res.redirect('/');
 	},
 	login: (req, res) => {
 		return res.render('userLoginForm');

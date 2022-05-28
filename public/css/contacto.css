@@ -1,0 +1,126 @@
+/*CSS for Contact vew*/
+
+.split{
+    float: left;
+    width: 50%;
+    height: 90vh;
+
+}
+
+/*Class contact form refers to values for the form*/
+/*Font to be determined*/
+.contact-form{
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 16px;
+}
+
+.contact-form input{
+    padding: 10px 10px;
+    border: 5px solid #9EE4E9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+}
+.contact-form textarea{
+    padding: 10px 10px;
+    border: 5px solid #9EE4E9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 100px;
+}
+
+.contact-form button{
+    background: #73D2DE;
+    border-radius: 14px;
+    border: none;
+    width: 20%;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 80%;
+    margin-bottom: 10px;
+}
+
+.contact-form p{
+    margin-bottom: 5px;
+}
+
+/*Network is just a class for H1*/
+.network{
+    margin-top: 5%;
+    color: #8F2D56;
+}
+
+/*Figures is just a margin*/
+.figures{
+    position: relative;
+    left: 5%;
+}
+
+/*Here starts all stuff related to the figures
+  in the social media area*/
+.square-red{
+    width: 220px;
+    height: 220px;
+    background-color: #D01157;
+    border-radius: 18px;
+    position: absolute;
+    transform: translate(70%,-0%);
+}
+
+.square-yellow{
+    width: 220px;
+    height: 220px;
+    background-color: #FFBC42;
+    border-radius: 18px;
+    position: absolute;
+    transform: translate(140%, 7%);
+}
+
+.square-blue{
+    width: 220px;
+    height: 220px;
+    background-color: #73D2DE;
+    border-radius: 18px;
+    position: absolute;
+    transform:translate(125%, 80%);
+}
+
+.square-white{
+    width: 220px;
+    height: 220px;
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    position: absolute;
+    transform:translate(50%, 80%);
+}
+
+.circle-wine{
+    height: 105px;
+    width: 105px;
+    background-color: #8F2D56;
+    border-radius: 50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+img{
+    position: absolute;
+    top:20%;
+    left: 20%;
+    height: 65px;
+    width: 65px;
+}

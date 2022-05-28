@@ -8,6 +8,7 @@ router.get('/', mainController.index);
 router.get('/acerca', mainController.acercaDeNosotros);
 router.get('/contenidos', mainController.contentShare);
 router.get('/impacto', mainController.impactoShare);
+router.get('/contacto', mainController.contactoShare);
 
 
 
