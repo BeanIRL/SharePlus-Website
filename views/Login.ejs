@@ -8,21 +8,7 @@
 -->
 </div>
 <!--Pop ups must be out of the website div-->
-<!--LogIn Pop Ups-->
-<div class = "popup" id="login">
-  <form class = "form_container" name = "LogIn" method="POST" action="/user/login">
-    <h1 class = "title_popup">Iniciar Sesión</h1>
-    <div class = "field_container">
-      <label class = "form_text">Correo</label>
-      <input type = "email" placeholder="Ingresa tu correo" class = "form_input" name="email" required>
-    </div>
-    <div class = "field_container">
-      <label class = "form_text">Contraseña</label>
-      <input type = "password" placeholder="Ingresa tu contraseña" class = "form_input" name="password" required>
-    </div>
-    <button type="submit" class = "form_button">Iniciar Sesión</button>
-  </form>
-</div>
+
 
 <!--SignIn Pop Ups-->
 <div class = "popup" id="signin" method="POST" action="/user/register">
@@ -56,6 +42,21 @@
   </form>
 </div>
 
+<!--LogIn Pop Ups-->
+<div class = "popup" id="login">
+  <form class = "form_container" name = "LogIn" method="POST" action="/user/login">
+    <h1 class = "title_popup">Iniciar Sesión</h1>
+    <div class = "field_container">
+      <label class = "form_text">Correo</label>
+      <input type = "email" placeholder="Ingresa tu correo" class = "form_input" name="email" required>
+    </div>
+    <div class = "field_container">
+      <label class = "form_text">Contraseña</label>
+      <input type = "password" placeholder="Ingresa tu contraseña" class = "form_input" name="password" required>
+    </div>
+    <button type="submit" class = "form_button">Iniciar Sesión</button>
+  </form>
+</div>
 <!--Privacy Policy Pop Ups-->
 <div class = "policy_popup" id="policy">
   <form class = "policy_square">

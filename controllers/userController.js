@@ -12,6 +12,7 @@ const controller = {
 	processRegister: (req, res) => {
 		const resultValidation = validationResult(req);
 
+		/*
 		if (resultValidation.errors.length > 0) {
 			return res.render('userRegisterForm', {
 				errors: resultValidation.mapped(),
@@ -31,6 +32,7 @@ const controller = {
 				oldData: req.body
 			});
 		}
+		*/
 
 		let userToCreate = {
 			...req.body,
@@ -40,7 +42,7 @@ const controller = {
 
 		let userCreated = User.create(userToCreate);
 
-		return res.redirect('/');
+		return res.redirect('/acerca');
 	},
 	login: (req, res) => {
 		return res.render('userLoginForm');
