@@ -1,9 +1,14 @@
 /*CSS for Contact vew*/
 
+
+.content{
+    height: 71.6vh;
+    width: 100%;
+}
 .split{
     float: left;
     width: 50%;
-    height: 90vh;
+    height: 800px;
 
 }
 
@@ -117,7 +122,7 @@
     left: 25%;
 }
 
-img{
+.imgs{
     position: absolute;
     top:20%;
     left: 20%;
